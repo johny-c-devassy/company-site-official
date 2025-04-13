@@ -96,7 +96,7 @@
                           <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"></a>
                       </div>
                   </div>
-                  <div class="col-lg-6 order-1 order-lg-2 hero-img">
+                  <div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center hero-img">
                       <img src="assets/img/hero-img.png" class="img-fluid animated rover-img" alt="">
                   </div>
               </div>
@@ -1260,29 +1260,29 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 120%;
+           /* height: 120%;*/
             background-image: url('assets/img/back.jpg'); /* Replace with your image path */
             background-size: cover;
             background-position: center;
             opacity: 0.3; /* Minimum opacity */
             z-index: -1;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
         }
 
     .rover-img {
         height: 75%;
-        width: auto; /* or 100% if you want it to stretch horizontally */
-        object-fit: contain; /* optional, helps with sizing */
-        opacity: .8;
-        max-width: 71%;
-        float: right;
-        margin-left: 10px;
-        padding-top: 35px;
+        opacity: .8;       
+        padding-top: 40px;
     }
-    @media (min-width: 1200px) {
-        .container, .container-lg, .container-md, .container-sm, .container-xl {
-            max-width: 1250px;
+        @media (min-width: 1200px) {
+            .container, .container-lg, .container-md, .container-sm, .container-xl {
+                max-width: 1250px;
+            }
         }
-    }
 
 </style>
 
